@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="icon" href="icons/icon-512x512.svg" type="image/svg+xml">
+    <link rel="icon" href="icons/icon-512x512.png" sizes="512x512" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/countdown.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <link rel="manifest" href="manifest.json" />
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+</head>
+<body>
+    <div id="alert" class="alert hidden" role="alert"></div>
+
+    <h1 id="title"></h1>
+    <main id="main"></main>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <div id="modalHeader" class="modal-header">
+                <h1 id="modalTitle"></h1>
+            </div>
+            <div id="modalBody" class="modal-body"></div>
+        </div>
+    </div>
+
+    <div id="emojiPickerPopover" popover>
+        <emoji-picker></emoji-picker>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+                console.log('SW has been registered:', registration.scope);
+            })
+            .catch(error => {
+                console.log('Error when registering SW:', error);
+            });
+        });
+        }
+    </script>
+
+</body>
+</html>

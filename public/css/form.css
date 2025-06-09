@@ -1,0 +1,102 @@
+input {
+  font: inherit;
+}
+
+#countdownForm {
+  display: grid;
+  gap: 1rem;
+}
+
+#countdownForm #color {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  background-color: white;
+}
+
+#emojiColorContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.form-label {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "input";
+}
+
+.form-input {
+  grid-area: input;
+
+  background-color: white;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.form-text {
+  grid-area: input;
+  z-index: 100;
+
+  width: max-content;
+  height: 100%;
+
+  margin-left: 1rem;
+  padding: 0 0.5rem;
+
+  display: flex;
+  align-items: center;
+
+  transform-origin: left center;
+  transition: 0.3s;
+}
+
+.form-input:is(:focus, :not(:placeholder-shown)) + .form-text {
+  background-color: white;
+  transform: translateY(-50%) scale(0.7);
+}
+
+#btnContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#btnContainer button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#btnContainer #discardBtn {
+  border: 2px solid grey;
+  color: black;
+}
+
+
+#btnContainer #discardBtn:hover {
+  color: white;
+  background-color: grey;
+}
+
+#btnContainer #deleteBtn {
+  border: 2px solid red;
+  color: red;
+}
+#btnContainer #deleteBtn:hover {
+  color: white;
+  background-color: red;
+}
+
+#btnContainer #updateBtn, 
+#btnContainer #saveBtn {
+  border: 2px solid green;
+  color: green;
+}
+#btnContainer #updateBtn:hover,
+#btnContainer #saveBtn:hover {
+  color: white;
+  background-color: green;
+}
+
