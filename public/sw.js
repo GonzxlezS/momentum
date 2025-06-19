@@ -1,6 +1,6 @@
 importScripts("./assetList.js");
 
-const VERSION = "1.0";
+const VERSION = "1.5";
 const CACHE_NAME = `Momentum-${VERSION}`;
 
 self.addEventListener('install', (event) => {

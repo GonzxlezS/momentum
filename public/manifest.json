@@ -4,10 +4,8 @@
     "description": "Create and customize countdown cards for your important events easily and quickly.",
     "start_url": ".",
     "display": "standalone",
-    "display_override": ["fullscreen", "minimal-ui"],
+    "display_override": ["standalone", "minimal-ui"],
     "orientation": "any",
-    "theme_color": "#000000",
-    "background_color": "#ffffff",
     "icons": [
         {
             "src": "icons/icon-512x512.png",
@@ -18,26 +16,20 @@
     "screenshots": [
         {
             "src": "screenshots/countdowns-wide.png",
-            "sizes": "2048x1536",
+            "sizes": "1920x1279",
             "type": "image/png",
             "form_factor": "wide",
             "label": "Countdowns list"
         },
         {
             "src": "screenshots/countdowns-narrow.png",
-            "sizes": "750x1333",
+            "sizes": "750x1334",
             "type": "image/png",
             "label": "Countdowns list"
         },
         {
-            "src": "screenshots/add-countdowns.png",
-            "sizes": "750x1333",
-            "type": "image/png",
-            "label": "Add countdown"
-        },
-        {
             "src": "screenshots/edit-countdowns.png",
-            "sizes": "750x1333",
+            "sizes": "750x1334",
             "type": "image/png",
             "label": "Edit countdown"
         }

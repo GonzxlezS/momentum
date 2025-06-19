@@ -1,14 +1,10 @@
-import { CountdownView } from "./views/countdownView.js";
-import { CloseModal } from "./views/utils.js";
-
-const modal = document.getElementById("modal");
-window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-        CloseModal();
-    }
-});
+import { CountdownView } from "./views/countdown.js";
 
 function loadCountdownView() {
+    const toastAlert = document.createElement('toast-alert');
+    toastAlert.setAttribute('id', 'toastAlert');
+    document.body.insertBefore(toastAlert, document.body.firstChild);
+
     const mainElement = document.getElementById("main");
     mainElement.innerHTML = "";
     CountdownView(mainElement);

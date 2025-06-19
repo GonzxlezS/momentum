@@ -11,7 +11,10 @@ ASSETS_LIST+=("\"/manifest.json\"")
 
 # emoji-picker-element
 EMOJI_PICKER="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"
+EMOJI_PICKER_DATA="https://cdn.jsdelivr.net/npm/emoji-picker-element-data@^1/en/emojibase/data.json"
+
 ASSETS_LIST+=("\"$EMOJI_PICKER\"")
+ASSETS_LIST+=("\"$EMOJI_PICKER_DATA\"")
 
 # Carpetas a recorrer
 DIRS=("css" "js" "icons" "screenshots")

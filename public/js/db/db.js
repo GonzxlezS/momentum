@@ -112,7 +112,6 @@ export class DBManager {
         if (!this.db) {
             await this.open();
         }
-
         return new Promise((resolve, reject) => {
             countdownData.validate();
 
