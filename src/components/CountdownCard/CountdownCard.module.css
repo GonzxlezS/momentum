@@ -1,0 +1,80 @@
+.countdownCard {
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  /* Grid */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.countdownCardRight {
+  padding: 0.5rem 0 0.5rem 0;
+
+  /* Grid*/
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.countdownCardEmoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  line-height: 1;
+  font-size: 2rem;
+}
+
+.countdownCardDetails {
+  overflow-x: auto;
+  white-space: nowrap;
+
+  /* Grid*/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.countdownCardName {
+  font-size: 1.5rem;
+  align-self: center;
+  justify-self: left;
+  text-align: left;
+}
+
+.countdownCardDate {
+  font-size: 0.8rem;
+  opacity: 60%;
+  align-self: center;
+  justify-self: left;
+  text-align: left;
+}
+
+.countdownCardLeft {
+  padding: 0.5rem 0 0.5rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdownCardDaysContent {
+  /* Grid*/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.countdownCardDaysleft {
+  font-size: 1.5rem;
+  align-self: end;
+  justify-self: center;
+  text-align: center;
+}
+
+.countdownCardDaysLabel {
+  align-self: start;
+  justify-self: center;
+  text-align: center;
+}

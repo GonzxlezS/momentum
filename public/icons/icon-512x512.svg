@@ -1,27 +1,35 @@
-<svg viewBox="0 0 100 100" width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+<svg
+  viewBox="0 0 100 100"
+  width="512"
+  height="512"
+  xmlns="http://www.w3.org/2000/svg"
+>
   <!-- Fondo -->
   <circle cx="50" cy="50" r="50" fill="white" />
 
   <!-- Punto en 12 en punto -->
   <circle cx="50" cy="10" r="4" fill="black" />
-  
+
   <!-- Punto en 1 en punto -->
   <circle cx="70" cy="15.36" r="4" fill="black" />
-  
+
   <!-- Punto en 2 en punto -->
   <circle cx="84.64" cy="30" r="4" fill="black" />
 
   <!-- Punto en 3 en punto -->
-  <circle cx="90" cy="50" r="4" fill="black" />  
-  
+  <circle cx="90" cy="50" r="4" fill="black" />
+
   <!-- Punto en 4 en punto -->
   <circle cx="84.64" cy="70" r="4" fill="black" />
   <!-- Punto en 11 en punto -->
-  <circle cx="30" cy="15.36" r="4" fill="black" /> 
-  
-  <!-- Arco desde 4 hasta 11 -->
-  <path d="M 84.64 70 
-           A 40 40 0 1 1 30 15.36"
-        fill="none" stroke="black" stroke-width="8" />
-</svg>
+  <circle cx="30" cy="15.36" r="4" fill="black" />
 
+  <!-- Arco desde 4 hasta 11 -->
+  <path
+    d="M 84.64 70 
+           A 40 40 0 1 1 30 15.36"
+    fill="none"
+    stroke="black"
+    stroke-width="8"
+  />
+</svg>

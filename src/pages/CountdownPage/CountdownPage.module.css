@@ -1,0 +1,48 @@
+.countdownListTitle {
+  padding: 0;
+  margin: 0;
+}
+
+.countdownList {
+  /* Grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.5rem 2rem;
+  padding-bottom: 5rem;
+}
+
+.sortBtn {
+  border: none;
+  font-size: 1.5rem;
+
+  color: var(--text-color);
+  background-color: rgba(0, 0, 0, 0);
+
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+
+  transition: background-color 0.3s ease;
+}
+
+.sortBtn:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.addBtn {
+  position: fixed;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: var(--background-color);
+  background-color: var(--text-color);
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+
+  border: none;
+  font-size: 2.5rem;
+  line-height: 1;
+  padding: 0 1rem 0 1rem;
+  border-radius: 0.5rem;
+}
